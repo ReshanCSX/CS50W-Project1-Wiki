@@ -1,13 +1,13 @@
 {% extends "encyclopedia/layout.html" %}
 
 
-    {% block title %}
-        {{name}}
-    {% endblock %}
+{% block title %}
+    {{page_name}}
+{% endblock %}
 
 
-    {% block body %}
+{% block body %}
 
-        {{render_entries|safe}}
-    
-    {% endblock %}
+    {{render_entries|safe}}
+
+{% endblock %}

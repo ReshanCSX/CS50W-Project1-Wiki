@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{page_name}} - Search results
+{% endblock %}
+
+{% block body %}
+    <h1>Search topic: {{keyword}} </h1>
+
+    <ul class="list-group list-group-flush">
+        {% for entry in search_entries %}
+                <li class="list-group-item"><a href="{% url 'content' entry %}">{{entry}}</a></li>
+            {% empty %}
+                no results match your search 
+        {% endfor %}
+    </ul>
+{% endblock %}
