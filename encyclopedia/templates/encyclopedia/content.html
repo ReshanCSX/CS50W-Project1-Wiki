@@ -8,6 +8,6 @@
 
 {% block body %}
 
-    {{render_entries|safe}}
-
+    {{content|safe}}
+    <a href="{% url 'edit' page_name %}" class="btn btn-primary my-3">Edit article</a>
 {% endblock %}
