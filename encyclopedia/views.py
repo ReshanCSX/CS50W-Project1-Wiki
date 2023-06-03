@@ -5,6 +5,7 @@ from markdown2 import Markdown
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django import forms
+from random import choice
 
 
 def index(request):
@@ -125,3 +126,9 @@ def edit(request, title):
         "title" : title,
         "form": EditPageForm({"content": edit_entry})
     })
+
+def random(request):
+
+    random_choice = choice(util.list_entries())
+
+    return HttpResponseRedirect(reverse("content", args=[random_choice]))
