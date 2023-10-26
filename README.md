@@ -50,3 +50,6 @@ The features of this project include:
 
  ## Project Preview
  [Project Demostration](https://youtu.be/u0iKZdhM3g8)
+
+ ![image](https://github.com/ReshanCSX/CS50W-Project1-Wiki/assets/64268212/33aaf234-03d7-47f5-abec-89b5fc96bac3)
+
