@@ -20,7 +20,8 @@ def content(request, title):
     if not entry:
         return render(request, "encyclopedia/error.html", {
             "message" : f"The requested URL <b> {request.get_full_path()} </b> was not found",
-            "redirect": "index" 
+            "redirect": "index",
+            "page_name": "Error" 
         })
 
     markdown = Markdown()
@@ -77,7 +78,8 @@ def create(request):
             if title.lower() in titles:
                 return render(request, "encyclopedia/error.html",{
                     "message": "Page with this name already exists",
-                    "redirect": "create"
+                    "redirect": "create",
+                    "page_name": "Error" 
                 })
             
             # Creating the page
@@ -91,7 +93,8 @@ def create(request):
 
     # Rendering the create page
     return render(request, "encyclopedia/create.html", {
-            "form": NewPageForm()
+            "form": NewPageForm(),
+            "page_name": "Create"
         })
 
 
@@ -118,7 +121,8 @@ def edit(request, title):
     if not edit_entry:
         return render(request, "encyclopedia/error.html", {
             "message": "The page does not exist",
-            "redirect": "index"
+            "redirect": "index",
+            "page_name": "Error" 
         })
     
     # Rendering the edit page

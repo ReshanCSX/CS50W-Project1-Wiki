@@ -20,7 +20,7 @@
             <div class="sidebar col-lg-2 col-md-3">
                 <h2 class="p-2">Wiki</h2>
                 <form class="p-2" action="{% url 'search' %}">
-                    <input class="search" type="text" name="q" placeholder="Search Encyclopedia">
+                    <input class="search" autocomplete="off" type="text" name="q" placeholder="Search Encyclopedia">
                 </form>
                 <div class="p-2">
                     <a href="{% url 'index' %}">Home</a>
