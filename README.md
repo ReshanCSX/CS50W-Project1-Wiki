@@ -7,6 +7,10 @@ The features of this project include:
 - **Viewing and Searching Articles:** Users can easily view and search for specific articles.
 - **Creating and Editing Articles:** Users have the ability to create new articles and edit existing ones.
 - **Random Page Function:** A unique feature that selects and displays a random page from the encyclopedia for the user’s exploration.
+
+
+## Project Preview
+[Project Demostration Video](https://youtu.be/u0iKZdhM3g8)
   
 
 ## Project Specifications
@@ -48,8 +52,7 @@ The features of this project include:
   - CSS
   - Bootstrap
 
- ## Project Preview
- [Project Demostration Video](https://youtu.be/u0iKZdhM3g8)
+ ## Gallery
 
 - Preview image
   
