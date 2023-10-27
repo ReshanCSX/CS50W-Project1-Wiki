@@ -1,6 +1,6 @@
 # CS50W - Project 1 - Wiki
 
-Introducing to ‘Wiki’, the first project of CS50’s Web Programming with Python and JavaScript. This project is a Wikipedia-like online encyclopedia, built and designed using the Python language and Django framework.
+Introducing to ‘Wiki’, the project 1 of CS50’s Web Programming with Python and JavaScript. This project is a Wikipedia-like online encyclopedia, built using the Python language and Django framework.
 
 The features of this project include:
 
